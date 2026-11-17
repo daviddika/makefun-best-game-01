@@ -3,10 +3,11 @@
 // What this program does, and nothing else: it hands the game in. It copies
 // the static game in game/ and the screenshots in screenshots/ from this
 // repository into the output directory, then writes dossier.json there using
-// the vendored make.fun library (vendor/makefun-game.ts). The judge reads
-// that dossier; the grader runs this program twice and expects identical
-// bytes both times, so there is no timestamp, no randomness and no network
-// anywhere in here.
+// the vendored make.fun library (vendor/makefun-game.ts). The four
+// screenshots (1-start, 2-play, 3-win, 4-end) show the game states the
+// judge will see. The judge reads that dossier; the grader runs this
+// program twice and expects identical bytes both times, so there is no
+// timestamp, no randomness and no network anywhere in here.
 //
 // Run it locally to check the entry before submitting:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
